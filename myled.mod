@@ -1,2 +1,2 @@
-/home/ubuntu/myled/myled.o
+/home/ubuntu/myled-device-driver/myled.o
 
