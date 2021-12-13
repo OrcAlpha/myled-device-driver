@@ -30,22 +30,22 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 	}
 	return 1;
 }
-static ssize_t sushi_read(struct file* filp, char* buf, size_t count, loff_t* pos){
+static ssize_t dog_read(struct file* filp, char* buf, size_t count, loff_t* pos){
 	
 	int size = 0;
-	char sushi[] = {'s', 'u', 's', 'h', 'i'};
-	if(copy_to_user(buf+size, (const char *)sushi, sizeof(sushi))){
-		printk(KERN_ERR "sushi  copy_to_user failed.\n");
+	char dog[] = {'D', 'o', 'g', '!', ' '};
+	if(copy_to_user(buf+size, (const char *)dog, sizeof(dog))){
+		printk(KERN_ERR "dog : copy_to_user failed.\n");
 		return -EFAULT;
 	}
-	size += sizeof(sushi);
+	size += sizeof(dog);
 	return size;
 }
 
 static struct file_operations led_fops = {
 	.owner = THIS_MODULE,
 	.write = led_write,
-	.read = sushi_read
+	.read = dog_read
 };
 
 static int __init init_mod(void){
