@@ -25,23 +25,89 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 
 /*	printk(KERN_INFO "receive %c\n", c);*/
 
-	if(c == '0'){
+	if(c == '-'){
 		gpio_base[10] = 1 << 25;
+	}
+	else if(c == '0'){
+		gpio_base[7] = 1 << 25;
 	}
 	else if(c == '1'){
-		gpio_base[7] = 1 << 25;
+			gpio_base[7] = 1 << 25;
+			msleep(500);
+			gpio_base[10] = 1 << 25;
+			msleep(500);
+			round++;
+		
 	}
 	else if(c == '2'){
-		while(round < 5){
-		gpio_base[7] = 1 << 25;
-		msleep(500);
-		gpio_base[10] = 1 << 25;
-		msleep(500);
-		gpio_base[7] = 1 << 25;
-		msleep(500);
-		round++;
-		}
+		
+			gpio_base[7] = 1 << 25;
+			msleep(500);
+			gpio_base[10] = 1 << 25;
+			msleep(500);
+			gpio_base[7] = 1 << 25;
+			msleep(500);
+			gpio_base[10] = 1 << 25;
+			msleep(500);
+		
+	
 	}
+	else if(c == '3'){
+			gpio_base[7] = 1 << 25;
+			msleep(500);
+			gpio_base[10] = 1 << 25;
+			msleep(500);
+		
+		
+	}
+	else if(c == '4'){
+			gpio_base[7] = 1 << 25;
+			msleep(500);
+			gpio_base[10] = 1 << 25;
+			msleep(500);
+			round++;
+		
+	}
+	else if(c == '5'){
+			gpio_base[7] = 1 << 25;
+			msleep(500);
+			gpio_base[10] = 1 << 25;
+			msleep(500);
+			round++;
+		
+	}
+	else if(c == '6'){
+			gpio_base[7] = 1 << 25;
+			msleep(500);
+			gpio_base[10] = 1 << 25;
+			msleep(500);
+			round++;
+		
+	}
+	else if(c == '7'){
+			gpio_base[7] = 1 << 25;
+			msleep(500);
+			gpio_base[10] = 1 << 25;
+			msleep(500);
+			round++;
+		
+	}
+	else if(c == '8'){
+			gpio_base[7] = 1 << 25;
+			msleep(500);
+			gpio_base[10] = 1 << 25;
+			msleep(500);
+			round++;
+		
+	}
+	else if(c == '9'){
+			gpio_base[7] = 1 << 25;
+			msleep(500);
+			gpio_base[10] = 1 << 25;
+			msleep(500);
+			round++;
+	}
+	
 	return 1;
 }
 static ssize_t dog_read(struct file* filp, char* buf, size_t count, loff_t* pos){
