@@ -32,80 +32,85 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 		gpio_base[7] = 1 << 25;
 	}
 	else if(c == '1'){
+		while(round < 1){
 			gpio_base[7] = 1 << 25;
 			msleep(500);
 			gpio_base[10] = 1 << 25;
 			msleep(500);
 			round++;
-		
+		}
 	}
 	else if(c == '2'){
-		
+		while(round < 2){
 			gpio_base[7] = 1 << 25;
 			msleep(500);
 			gpio_base[10] = 1 << 25;
 			msleep(500);
-			gpio_base[7] = 1 << 25;
-			msleep(500);
-			gpio_base[10] = 1 << 25;
-			msleep(500);
-		
-	
+			round++;
+		}
 	}
 	else if(c == '3'){
+		while(round < 3){
 			gpio_base[7] = 1 << 25;
 			msleep(500);
 			gpio_base[10] = 1 << 25;
 			msleep(500);
-		
-		
+			round++;
+		}
 	}
 	else if(c == '4'){
+		while(round < 4){
 			gpio_base[7] = 1 << 25;
 			msleep(500);
 			gpio_base[10] = 1 << 25;
 			msleep(500);
 			round++;
-		
+		}
 	}
 	else if(c == '5'){
+		while(round < 5){
 			gpio_base[7] = 1 << 25;
 			msleep(500);
 			gpio_base[10] = 1 << 25;
 			msleep(500);
 			round++;
-		
+		}
 	}
 	else if(c == '6'){
+		while(round < 6){
 			gpio_base[7] = 1 << 25;
 			msleep(500);
 			gpio_base[10] = 1 << 25;
 			msleep(500);
 			round++;
-		
+		}
 	}
 	else if(c == '7'){
+		while(round < 7){
 			gpio_base[7] = 1 << 25;
 			msleep(500);
 			gpio_base[10] = 1 << 25;
 			msleep(500);
 			round++;
-		
+		}
 	}
 	else if(c == '8'){
+		while(round < 8){
 			gpio_base[7] = 1 << 25;
 			msleep(500);
 			gpio_base[10] = 1 << 25;
 			msleep(500);
 			round++;
-		
+		}
 	}
 	else if(c == '9'){
+		while(round < 9){
 			gpio_base[7] = 1 << 25;
 			msleep(500);
 			gpio_base[10] = 1 << 25;
 			msleep(500);
 			round++;
+		}
 	}
 	
 	return 1;
