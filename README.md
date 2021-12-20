@@ -6,7 +6,7 @@
  
 講義動画：ロボットシステム学第7回～第8回(<https://www.youtube.com/watch?v=xQW8-FNuboo>)を見ながら作成
 ## コードについて
-千葉工業大学　未来ロボティクス学科准教授　上田隆一先生(<https://github.com/ryuichiueda>)のコードの一部を改良したものです。
+千葉工業大学　未来ロボティクス学科准教授　上田隆一先生(<https://github.com/ryuichiueda>)のコードの一部を改変したものです。
 
 ## オリジナルの変更点
 ・/dev/myled0　をcatしたときの出力文字を変更。
