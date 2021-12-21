@@ -5,9 +5,8 @@
 #include<linux/uaccess.h>
 #include<linux/io.h>
 #include<linux/delay.h>
-#include<linux/time.h>
 
-MODULE_AUTHOR("Ryuichi Ueda & Takeru Matsumoto");
+MODULE_AUTHOR("Ryuichi Ueda + Takeru Matsumoto");
 MODULE_DESCRIPTION("driver for LED control");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.0.1");
