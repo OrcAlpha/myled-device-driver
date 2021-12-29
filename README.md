@@ -14,6 +14,7 @@
 * LED点灯のパターンを追加。
 
 ## デモ映像
+<https://youtu.be/TQ50Kr4OWGU>
 
 ## 動作確認環境
 OS ...Ubuntu 20.04 LTS
