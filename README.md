@@ -21,7 +21,7 @@ OS ...Ubuntu 20.04 LTS
  
 ハード...Raspberry Pi4
 
-## 利用方法
+## 使用方法
 * ハードのセッティング
  
 　LEDのアノードをRaspberry Pi4
