@@ -46,7 +46,7 @@ OS ...Ubuntu 20.04 LTS
 ```$ make clean```
 
 ## ライセンス
-GNU GENERAL PUBLIC LICENSE v3.0
+GNU General Public License v3.0
 
 ## 参考
 READMEの書き方(<https://laraweb.net/surrounding/7477/>)
