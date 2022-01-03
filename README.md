@@ -26,7 +26,9 @@ OS ...Ubuntu 20.04 LTS
  
 　LEDのアノードをRaspberry Pi4
 のGPIO25ピンに繋ぎ、カソードをGNDに接続する。LEDには200Ω程度の抵抗を挟むことが理想である。
-![IMG_E0640](https://user-images.githubusercontent.com/92071428/147715470-11dd359a-596c-4ed6-8780-1c574a56b82e.JPG)
+ 
+ この図では赤いコードがアノード、青いコードがカソードになっている。
+![IMG_E0642](https://user-images.githubusercontent.com/92071428/147917005-24eb0873-2156-4357-9fed-8f7461dc2b2f.JPG)
 * コンパイル
  
 ```$ make```
